@@ -1,2 +1,14 @@
-vendor
+# IDE related ignores
+.buildpath
+.settings/
+.project
+*.launch
+.idea
+
+# Enviroment related ignores
+.DS_Store
+*~
+
+# Project related ignores
 composer.lock
+/vendor/

@@ -1,21 +1,27 @@
 {
-    "name": "ordinaryjellyfish/react-static",
-    "description": "A simple middleware for serving static files with ReactPHP",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-      {
-        "name": "Tristian Kelly",
-        "email": "tristian.kelly560@gmail.com",
-        "role": "Developer"
-      }
-    ],
-    "require": {
-      "react/http": "^0.8.5"
+  "name": "mvc4us/react-static",
+  "description": "A simple middleware for serving static files with ReactPHP",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tristian Kelly",
+      "email": "tristian.kelly560@gmail.com",
+      "role": "Developer"
     },
-    "autoload": {
-      "psr-4": {
-        "OrdinaryJellyfish\\ReactStatic\\": "src/"
-      }
+    {
+      "name": "Erdem Uncuoğlu",
+      "email": "erdem@mvc4.us"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "ext-fileinfo": "*",
+    "react/http": "^1.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mvc4us\\ReactStatic\\": "src/"
     }
   }
+}
