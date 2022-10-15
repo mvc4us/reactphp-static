@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace Mvc4us\ReactStatic;
 
+use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use React\Http\Message\Response;
 
@@ -23,7 +24,7 @@ class StaticServer
         $this->exclude = $exclude;
     }
 
-    public function __invoke(ServerRequestInterface $request, callable $next): Response
+    public function __invoke(ServerRequestInterface $request, callable $next): ResponseInterface
     {
         if (empty($this->path)) {
             return $next($request);
